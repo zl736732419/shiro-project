@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.zheng.shiro.dao.UserDao;
 import com.zheng.shiro.domain.User;
@@ -12,6 +13,7 @@ import com.zheng.shiro.service.RoleService;
 import com.zheng.shiro.service.UserService;
 import com.zheng.shiro.utils.PasswordHelper;
 
+@Service
 public class UserServiceImpl implements UserService {
 
 	@Autowired

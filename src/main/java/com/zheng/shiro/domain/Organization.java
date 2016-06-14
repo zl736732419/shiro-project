@@ -50,6 +50,10 @@ public class Organization implements Serializable {
 	public void setParentIds(String parentIds) {
 		this.parentIds = parentIds;
 	}
+	
+	public boolean isRootNode() {
+        return parentId == 0;
+    }
 
 	public String makeSelfAsParentIds() {
         return getParentIds() + getId() + "/";

@@ -51,7 +51,7 @@
 	<!-- 自定义异常处理 -->	
 	<bean class="com.zheng.shiro.exceptionhandler.DefaultExceptionHandler"/>
 
-	<!-- 引入shiro -->
+	<!-- 引入shiro注解 -->
 	<import resource="classpath:spring-mvc-shiro.xml"/>
 
 </beans>
